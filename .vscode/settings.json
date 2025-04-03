@@ -1,8 +1,0 @@
-{
-    "python.defaultInterpreterPath": "D:\\Code\\DNN\\dnn_env\\Scripts\\python.exe",
-    "python.terminal.activateEnvironment": true,
-    "terminal.integrated.shellArgs.windows": [
-        "/K",
-        "D:\\Code\\DNN\\dnn_env\\Scripts\\activate.ps1"
-    ]
-}
