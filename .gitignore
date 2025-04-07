@@ -1,2 +1,5 @@
 .qodo
 dnn_env/
+*.onnx
+*.pt
+*.trt

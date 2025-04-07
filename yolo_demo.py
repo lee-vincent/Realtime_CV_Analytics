@@ -4,7 +4,9 @@ import os
 
 # Construct the absolute path to the venv site-packages
 # Use the known absolute path for simplicity in this case
-venv_site_packages = 'D:\\Code\\DNN\\dnn_env\\lib\\site-packages'
+# venv_site_packages = 'D:\\Code\\DNN\\dnn_env\\lib\\site-packages'
+venv_site_packages = 'C:\\Program Files\\NVIDIA\\CUDNN\\v9.8\\lib\\x64'
+
 
 # Check if the path exists and insert it at the beginning if it's not already first
 if os.path.exists(venv_site_packages) and (not sys.path or sys.path[0] != venv_site_packages):
@@ -245,7 +247,8 @@ class TRTInference:
 if __name__ == '__main__':
     print("Loading TensorRT engine...")
     # --- Configuration ---
-    engine_path = 'D:/Code/DNN/yolov5/yolov5s.trt'  # Absolute path to the engine file
+    # engine_path = 'D:/Code/DNN/yolov5/yolov5s.trt'  # Absolute path to the engine file
+    engine_path = './yolov5s.trt'
     video_path = 1  # Use 1 for your iPhone/Elgato feed, 0 for default webcam, or a video file path
     input_shape_wh = (640, 640)  # Input shape (width, height) used during engine creation
 
